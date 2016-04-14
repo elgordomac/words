@@ -1,15 +1,15 @@
 //
-//  wordsTests.swift
-//  wordsTests
+//  WordsTests.swift
+//  WordsTests
 //
-//  Created by Gordon MacDonald on 1/30/16.
+//  Created by Gordon MacDonald on 4/3/16.
 //  Copyright © 2016 Gordon MacDonald. All rights reserved.
 //
 
 import XCTest
-@testable import words
+@testable import Words
 
-class wordsTests: XCTestCase {
+class WordsTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -24,6 +24,8 @@ class wordsTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let scrabble: Scrabble = Scrabble()
+        
     }
     
     func testPerformanceExample() {

@@ -7,68 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121656A71CA8E03700B5F2BF /* Distribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121656A61CA8E03700B5F2BF /* Distribution.swift */; };
+		12200FD91C6064A600F8A468 /* clear_tombstone_01.caf in Resources */ = {isa = PBXBuildFile; fileRef = 12200FD81C6064A600F8A468 /* clear_tombstone_01.caf */; };
+		12200FDB1C681F0500F8A468 /* Rack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12200FDA1C681F0500F8A468 /* Rack.swift */; };
+		12520A7D1CB1C3380094F657 /* WordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12520A7C1CB1C3380094F657 /* WordsTests.swift */; };
+		12520A841CB1C42A0094F657 /* DictionaryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121656A81CB1BE9400B5F2BF /* DictionaryTest.swift */; };
+		12520A861CB1D0DA0094F657 /* DistributionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12520A851CB1D0DA0094F657 /* DistributionTest.swift */; };
+		1275F8AB1C83B9CC000B228C /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1275F8AA1C83B9CC000B228C /* Banner.swift */; };
+		129334F81C5D029A0007E7E4 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129334F71C5D029A0007E7E4 /* Array2D.swift */; };
+		129334FC1C5D4BBA0007E7E4 /* Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129334FB1C5D4BBA0007E7E4 /* Alphabet.swift */; };
+		129334FE1C5D4D800007E7E4 /* dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 129334FD1C5D4D800007E7E4 /* dictionary.txt */; };
+		129335041C5D4D8D0007E7E4 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129334FF1C5D4D8D0007E7E4 /* Dictionary.swift */; };
+		129335051C5D4D8D0007E7E4 /* Scrabble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129335001C5D4D8D0007E7E4 /* Scrabble.swift */; };
+		129335061C5D4D8D0007E7E4 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129335011C5D4D8D0007E7E4 /* Tile.swift */; };
+		129335071C5D4D8D0007E7E4 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129335021C5D4D8D0007E7E4 /* Word.swift */; };
+		129335081C5D4D8D0007E7E4 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129335031C5D4D8D0007E7E4 /* Board.swift */; };
+		12A099CF1CB217C0000AB3B2 /* ScrabbleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A099CE1CB217C0000AB3B2 /* ScrabbleTest.swift */; };
 		12A6467B1C5CFB9C004540AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A6467A1C5CFB9C004540AC /* AppDelegate.swift */; };
-		12A6467D1C5CFB9C004540AC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 12A6467C1C5CFB9C004540AC /* GameScene.sks */; };
 		12A6467F1C5CFB9C004540AC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A6467E1C5CFB9C004540AC /* GameScene.swift */; };
 		12A646811C5CFB9C004540AC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A646801C5CFB9C004540AC /* GameViewController.swift */; };
 		12A646841C5CFB9C004540AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A646821C5CFB9C004540AC /* Main.storyboard */; };
 		12A646861C5CFB9C004540AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12A646851C5CFB9C004540AC /* Assets.xcassets */; };
 		12A646891C5CFB9C004540AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A646871C5CFB9C004540AC /* LaunchScreen.storyboard */; };
-		12A646941C5CFB9C004540AC /* wordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A646931C5CFB9C004540AC /* wordsTests.swift */; };
-		12A6469F1C5CFB9C004540AC /* wordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A6469E1C5CFB9C004540AC /* wordsUITests.swift */; };
+		12A646AD1C5CFCBD004540AC /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 12A646AC1C5CFCBD004540AC /* Sprites.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		12A646901C5CFB9C004540AC /* PBXContainerItemProxy */ = {
+		12520A7F1CB1C3380094F657 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 12A6466F1C5CFB9C004540AC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 12A646761C5CFB9C004540AC;
-			remoteInfo = words;
-		};
-		12A6469B1C5CFB9C004540AC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 12A6466F1C5CFB9C004540AC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 12A646761C5CFB9C004540AC;
-			remoteInfo = words;
+			remoteInfo = Words;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12A646771C5CFB9C004540AC /* words.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = words.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		121656A61CA8E03700B5F2BF /* Distribution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distribution.swift; sourceTree = "<group>"; };
+		121656A81CB1BE9400B5F2BF /* DictionaryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DictionaryTest.swift; path = ../wordsTests/DictionaryTest.swift; sourceTree = "<group>"; };
+		12200FD81C6064A600F8A468 /* clear_tombstone_01.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = clear_tombstone_01.caf; sourceTree = "<group>"; };
+		12200FDA1C681F0500F8A468 /* Rack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rack.swift; sourceTree = "<group>"; };
+		12520A7A1CB1C3380094F657 /* WordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12520A7C1CB1C3380094F657 /* WordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTests.swift; sourceTree = "<group>"; };
+		12520A7E1CB1C3380094F657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12520A851CB1D0DA0094F657 /* DistributionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DistributionTest.swift; path = wordsTests/DistributionTest.swift; sourceTree = SOURCE_ROOT; };
+		1275F8AA1C83B9CC000B228C /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		129334F71C5D029A0007E7E4 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		129334FB1C5D4BBA0007E7E4 /* Alphabet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alphabet.swift; sourceTree = "<group>"; };
+		129334FD1C5D4D800007E7E4 /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
+		129334FF1C5D4D8D0007E7E4 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		129335001C5D4D8D0007E7E4 /* Scrabble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scrabble.swift; sourceTree = "<group>"; };
+		129335011C5D4D8D0007E7E4 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		129335021C5D4D8D0007E7E4 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		129335031C5D4D8D0007E7E4 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		12A099CE1CB217C0000AB3B2 /* ScrabbleTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrabbleTest.swift; path = wordsTests/ScrabbleTest.swift; sourceTree = SOURCE_ROOT; };
+		12A646771C5CFB9C004540AC /* Words.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Words.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A6467A1C5CFB9C004540AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		12A6467C1C5CFB9C004540AC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		12A6467E1C5CFB9C004540AC /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		12A6467E1C5CFB9C004540AC /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; usesTabs = 0; };
 		12A646801C5CFB9C004540AC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		12A646831C5CFB9C004540AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12A646851C5CFB9C004540AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12A646881C5CFB9C004540AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12A6468A1C5CFB9C004540AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12A6468F1C5CFB9C004540AC /* wordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		12A646931C5CFB9C004540AC /* wordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordsTests.swift; sourceTree = "<group>"; };
-		12A646951C5CFB9C004540AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12A6469A1C5CFB9C004540AC /* wordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		12A6469E1C5CFB9C004540AC /* wordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordsUITests.swift; sourceTree = "<group>"; };
-		12A646A01C5CFB9C004540AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12A646AC1C5CFCBD004540AC /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		12520A771CB1C3380094F657 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12A646741C5CFB9C004540AC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		12A6468C1C5CFB9C004540AC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		12A646971C5CFB9C004540AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,12 +90,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12520A7B1CB1C3380094F657 /* WordsTests */ = {
+			isa = PBXGroup;
+			children = (
+				121656A81CB1BE9400B5F2BF /* DictionaryTest.swift */,
+				12A099CE1CB217C0000AB3B2 /* ScrabbleTest.swift */,
+				12520A851CB1D0DA0094F657 /* DistributionTest.swift */,
+				12520A7C1CB1C3380094F657 /* WordsTests.swift */,
+				12520A7E1CB1C3380094F657 /* Info.plist */,
+			);
+			path = WordsTests;
+			sourceTree = "<group>";
+		};
 		12A6466E1C5CFB9C004540AC = {
 			isa = PBXGroup;
 			children = (
 				12A646791C5CFB9C004540AC /* words */,
-				12A646921C5CFB9C004540AC /* wordsTests */,
-				12A6469D1C5CFB9C004540AC /* wordsUITests */,
+				12520A7B1CB1C3380094F657 /* WordsTests */,
 				12A646781C5CFB9C004540AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,9 +114,8 @@
 		12A646781C5CFB9C004540AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				12A646771C5CFB9C004540AC /* words.app */,
-				12A6468F1C5CFB9C004540AC /* wordsTests.xctest */,
-				12A6469A1C5CFB9C004540AC /* wordsUITests.xctest */,
+				12A646771C5CFB9C004540AC /* Words.app */,
+				12520A7A1CB1C3380094F657 /* WordsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,42 +123,54 @@
 		12A646791C5CFB9C004540AC /* words */ = {
 			isa = PBXGroup;
 			children = (
+				129334FF1C5D4D8D0007E7E4 /* Dictionary.swift */,
+				129335001C5D4D8D0007E7E4 /* Scrabble.swift */,
+				129335011C5D4D8D0007E7E4 /* Tile.swift */,
+				129335021C5D4D8D0007E7E4 /* Word.swift */,
+				129335031C5D4D8D0007E7E4 /* Board.swift */,
+				12200FDA1C681F0500F8A468 /* Rack.swift */,
+				129334FD1C5D4D800007E7E4 /* dictionary.txt */,
+				12A646AC1C5CFCBD004540AC /* Sprites.atlas */,
 				12A6467A1C5CFB9C004540AC /* AppDelegate.swift */,
-				12A6467C1C5CFB9C004540AC /* GameScene.sks */,
 				12A6467E1C5CFB9C004540AC /* GameScene.swift */,
+				12200FD81C6064A600F8A468 /* clear_tombstone_01.caf */,
 				12A646801C5CFB9C004540AC /* GameViewController.swift */,
 				12A646821C5CFB9C004540AC /* Main.storyboard */,
 				12A646851C5CFB9C004540AC /* Assets.xcassets */,
 				12A646871C5CFB9C004540AC /* LaunchScreen.storyboard */,
 				12A6468A1C5CFB9C004540AC /* Info.plist */,
+				129334F71C5D029A0007E7E4 /* Array2D.swift */,
+				129334FB1C5D4BBA0007E7E4 /* Alphabet.swift */,
+				1275F8AA1C83B9CC000B228C /* Banner.swift */,
+				121656A61CA8E03700B5F2BF /* Distribution.swift */,
 			);
 			path = words;
-			sourceTree = "<group>";
-		};
-		12A646921C5CFB9C004540AC /* wordsTests */ = {
-			isa = PBXGroup;
-			children = (
-				12A646931C5CFB9C004540AC /* wordsTests.swift */,
-				12A646951C5CFB9C004540AC /* Info.plist */,
-			);
-			path = wordsTests;
-			sourceTree = "<group>";
-		};
-		12A6469D1C5CFB9C004540AC /* wordsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				12A6469E1C5CFB9C004540AC /* wordsUITests.swift */,
-				12A646A01C5CFB9C004540AC /* Info.plist */,
-			);
-			path = wordsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		12A646761C5CFB9C004540AC /* words */ = {
+		12520A791CB1C3380094F657 /* WordsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12A646A31C5CFB9C004540AC /* Build configuration list for PBXNativeTarget "words" */;
+			buildConfigurationList = 12520A811CB1C3380094F657 /* Build configuration list for PBXNativeTarget "WordsTests" */;
+			buildPhases = (
+				12520A761CB1C3380094F657 /* Sources */,
+				12520A771CB1C3380094F657 /* Frameworks */,
+				12520A781CB1C3380094F657 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12520A801CB1C3380094F657 /* PBXTargetDependency */,
+			);
+			name = WordsTests;
+			productName = WordsTests;
+			productReference = 12520A7A1CB1C3380094F657 /* WordsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		12A646761C5CFB9C004540AC /* Words */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12A646A31C5CFB9C004540AC /* Build configuration list for PBXNativeTarget "Words" */;
 			buildPhases = (
 				12A646731C5CFB9C004540AC /* Sources */,
 				12A646741C5CFB9C004540AC /* Frameworks */,
@@ -146,46 +180,10 @@
 			);
 			dependencies = (
 			);
-			name = words;
+			name = Words;
 			productName = words;
-			productReference = 12A646771C5CFB9C004540AC /* words.app */;
+			productReference = 12A646771C5CFB9C004540AC /* Words.app */;
 			productType = "com.apple.product-type.application";
-		};
-		12A6468E1C5CFB9C004540AC /* wordsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 12A646A61C5CFB9C004540AC /* Build configuration list for PBXNativeTarget "wordsTests" */;
-			buildPhases = (
-				12A6468B1C5CFB9C004540AC /* Sources */,
-				12A6468C1C5CFB9C004540AC /* Frameworks */,
-				12A6468D1C5CFB9C004540AC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				12A646911C5CFB9C004540AC /* PBXTargetDependency */,
-			);
-			name = wordsTests;
-			productName = wordsTests;
-			productReference = 12A6468F1C5CFB9C004540AC /* wordsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		12A646991C5CFB9C004540AC /* wordsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 12A646A91C5CFB9C004540AC /* Build configuration list for PBXNativeTarget "wordsUITests" */;
-			buildPhases = (
-				12A646961C5CFB9C004540AC /* Sources */,
-				12A646971C5CFB9C004540AC /* Frameworks */,
-				12A646981C5CFB9C004540AC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				12A6469C1C5CFB9C004540AC /* PBXTargetDependency */,
-			);
-			name = wordsUITests;
-			productName = wordsUITests;
-			productReference = 12A6469A1C5CFB9C004540AC /* wordsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -193,27 +191,21 @@
 		12A6466F1C5CFB9C004540AC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Gordon MacDonald";
 				TargetAttributes = {
+					12520A791CB1C3380094F657 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 12A646761C5CFB9C004540AC;
+					};
 					12A646761C5CFB9C004540AC = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 2S6B6D3BHH;
 					};
-					12A6468E1C5CFB9C004540AC = {
-						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 2S6B6D3BHH;
-						TestTargetID = 12A646761C5CFB9C004540AC;
-					};
-					12A646991C5CFB9C004540AC = {
-						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 2S6B6D3BHH;
-						TestTargetID = 12A646761C5CFB9C004540AC;
-					};
 				};
 			};
-			buildConfigurationList = 12A646721C5CFB9C004540AC /* Build configuration list for PBXProject "words" */;
+			buildConfigurationList = 12A646721C5CFB9C004540AC /* Build configuration list for PBXProject "Words" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -226,80 +218,74 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				12A646761C5CFB9C004540AC /* words */,
-				12A6468E1C5CFB9C004540AC /* wordsTests */,
-				12A646991C5CFB9C004540AC /* wordsUITests */,
+				12A646761C5CFB9C004540AC /* Words */,
+				12520A791CB1C3380094F657 /* WordsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		12520A781CB1C3380094F657 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12A646751C5CFB9C004540AC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12A6467D1C5CFB9C004540AC /* GameScene.sks in Resources */,
 				12A646891C5CFB9C004540AC /* LaunchScreen.storyboard in Resources */,
+				12200FD91C6064A600F8A468 /* clear_tombstone_01.caf in Resources */,
 				12A646861C5CFB9C004540AC /* Assets.xcassets in Resources */,
 				12A646841C5CFB9C004540AC /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		12A6468D1C5CFB9C004540AC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		12A646981C5CFB9C004540AC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				129334FE1C5D4D800007E7E4 /* dictionary.txt in Resources */,
+				12A646AD1C5CFCBD004540AC /* Sprites.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		12520A761CB1C3380094F657 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12520A7D1CB1C3380094F657 /* WordsTests.swift in Sources */,
+				12520A861CB1D0DA0094F657 /* DistributionTest.swift in Sources */,
+				12520A841CB1C42A0094F657 /* DictionaryTest.swift in Sources */,
+				12A099CF1CB217C0000AB3B2 /* ScrabbleTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12A646731C5CFB9C004540AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129335041C5D4D8D0007E7E4 /* Dictionary.swift in Sources */,
+				129335081C5D4D8D0007E7E4 /* Board.swift in Sources */,
 				12A6467F1C5CFB9C004540AC /* GameScene.swift in Sources */,
 				12A646811C5CFB9C004540AC /* GameViewController.swift in Sources */,
+				129335051C5D4D8D0007E7E4 /* Scrabble.swift in Sources */,
+				1275F8AB1C83B9CC000B228C /* Banner.swift in Sources */,
+				129335071C5D4D8D0007E7E4 /* Word.swift in Sources */,
+				12200FDB1C681F0500F8A468 /* Rack.swift in Sources */,
+				129334FC1C5D4BBA0007E7E4 /* Alphabet.swift in Sources */,
+				129335061C5D4D8D0007E7E4 /* Tile.swift in Sources */,
 				12A6467B1C5CFB9C004540AC /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		12A6468B1C5CFB9C004540AC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				12A646941C5CFB9C004540AC /* wordsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		12A646961C5CFB9C004540AC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				12A6469F1C5CFB9C004540AC /* wordsUITests.swift in Sources */,
+				129334F81C5D029A0007E7E4 /* Array2D.swift in Sources */,
+				121656A71CA8E03700B5F2BF /* Distribution.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		12A646911C5CFB9C004540AC /* PBXTargetDependency */ = {
+		12520A801CB1C3380094F657 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 12A646761C5CFB9C004540AC /* words */;
-			targetProxy = 12A646901C5CFB9C004540AC /* PBXContainerItemProxy */;
-		};
-		12A6469C1C5CFB9C004540AC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 12A646761C5CFB9C004540AC /* words */;
-			targetProxy = 12A6469B1C5CFB9C004540AC /* PBXContainerItemProxy */;
+			target = 12A646761C5CFB9C004540AC /* Words */;
+			targetProxy = 12520A7F1CB1C3380094F657 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -323,6 +309,35 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		12520A821CB1C3380094F657 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = WordsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.planetgog.WordsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Words.app/Words";
+			};
+			name = Debug;
+		};
+		12520A831CB1C3380094F657 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = WordsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.planetgog.WordsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Words.app/Words";
+			};
+			name = Release;
+		};
 		12A646A11C5CFB9C004540AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -408,10 +423,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: gmacdon76@hotmail.com (F89HK9GYZN)";
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = words/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.planetgog.words;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Words;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -419,67 +441,33 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: gmacdon76@hotmail.com (F89HK9GYZN)";
+				ENABLE_TESTABILITY = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = words/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.planetgog.words;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		12A646A71C5CFB9C004540AC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				INFOPLIST_FILE = wordsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.planetgog.wordsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/words.app/words";
-			};
-			name = Debug;
-		};
-		12A646A81C5CFB9C004540AC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = wordsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.planetgog.wordsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/words.app/words";
-			};
-			name = Release;
-		};
-		12A646AA1C5CFB9C004540AC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				INFOPLIST_FILE = wordsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.planetgog.wordsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = words;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		12A646AB1C5CFB9C004540AC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = wordsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.planetgog.wordsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = words;
-				USES_XCTRUNNER = YES;
+				PRODUCT_NAME = Words;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		12A646721C5CFB9C004540AC /* Build configuration list for PBXProject "words" */ = {
+		12520A811CB1C3380094F657 /* Build configuration list for PBXNativeTarget "WordsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12520A821CB1C3380094F657 /* Debug */,
+				12520A831CB1C3380094F657 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12A646721C5CFB9C004540AC /* Build configuration list for PBXProject "Words" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				12A646A11C5CFB9C004540AC /* Debug */,
@@ -488,29 +476,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		12A646A31C5CFB9C004540AC /* Build configuration list for PBXNativeTarget "words" */ = {
+		12A646A31C5CFB9C004540AC /* Build configuration list for PBXNativeTarget "Words" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				12A646A41C5CFB9C004540AC /* Debug */,
 				12A646A51C5CFB9C004540AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		12A646A61C5CFB9C004540AC /* Build configuration list for PBXNativeTarget "wordsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				12A646A71C5CFB9C004540AC /* Debug */,
-				12A646A81C5CFB9C004540AC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		12A646A91C5CFB9C004540AC /* Build configuration list for PBXNativeTarget "wordsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				12A646AA1C5CFB9C004540AC /* Debug */,
-				12A646AB1C5CFB9C004540AC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
