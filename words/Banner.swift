@@ -74,12 +74,12 @@ class Banner {
         self.time_elapsed.text = "";
     }
     
-    func set_info(current_word: String?, best: String?, iterations: String?, time_elapsed: Double?) {
+    func set_info(current_word: NSString?, best: String?, iterations: String?, time_elapsed: Double?) {
         
         dispatch_async(dispatch_get_main_queue()) {
          
         if(current_word != nil) {
-            self.current_word.text = "current: " + current_word!
+            self.current_word.text = "current: " + (current_word! as String)
         }
         else {
             self.current_word.text = "current: "

@@ -183,7 +183,8 @@ class Scrabble {
         var iterations: Int = 0;
         let startTime = NSDate();
         
-        let words = dictionary.getNSWords();
+        var words = dictionary.getNSWords();
+       // words = dictionary.getNSWord("ad"); //XXX
         let board_distribution = board.get_distribution()
         let rack_distribution = rack.get_distribution()
         
@@ -202,7 +203,7 @@ class Scrabble {
             interval_count += 1;
             if(interval_count >= interval) {
                 interval_count = 0;
-                self.banner!.set_info(String(word), best: highest?.debugDescription, iterations: String(iterations), time_elapsed: NSDate().timeIntervalSinceDate(startTime))
+                self.banner!.set_info(word , best: highest?.debugDescription, iterations: String(iterations), time_elapsed: NSDate().timeIntervalSinceDate(startTime))
             }
             
             // does the word contain one of the rack tiles
@@ -233,73 +234,185 @@ class Scrabble {
                 let row = seed.row;
                 let col = seed.col;
                 
-                // get indexes of seed in word, iterate through those
-                var indexes = get_indexes_of(word, letter: String(seed.letter!));
+                // going right...
                 
-                
-                // looking for a word going right (can rule out a seed boxed in left and right)...
+                // we can rule out a seed boxed in left and right as it will be covered already...
                 if(seed.left == nil || !seed.left!.yellow || seed.right == nil || !seed.right!.yellow) {
-                    for index in indexes {
-                        if(index > col) { continue; } // head of the word won't fit on board
-                        if(col + word.length - index > 14) { continue; } // tail of the word won't fit on the board
                     
-                        // fits on the board so place it...
-                        let w = place_word(board, row: row, col: col - index, word: word as String, distribution: rack_distribution, direction: "right");
+                    var start_col = col - word.length + 1;  // if row is 4 and word length is 3 chars then start_row should be 2
+                    if(start_col < 0) { start_col = 0; }
+                    
+                    var end_col = col;  // if col is 12 and word length is 6 chars then end_col should be 9
+                    if((col + word.length - 1) > 14) { end_col = 14 - word.length + 1 }
+                    
+                    for(var i=start_col; i<=col; i++) {
+                        
+                        let w = place_word(board, row: row, col: i, word: word as String, distribution: rack_distribution, direction: "right");
                         if (w != nil) {
                             // score and check if its the highest
                             w?.score = score(w!);
-                            if (highest == nil || w!.score > highest!.score) {
+                            if (w!.score > 0 && (highest == nil || w!.score > highest!.score)) {
                                 highest = w!;
                             }
                         }
                         // reset
                         board.reset_letters();
                         iterations += 1;
-                    
                     }
-                    // now deal with the seed derivitives...
-                    // we've already tried all horitonzal possibilities but we can try the tiles left
-                    // and right if they are blank to add a word in the vertical direction
-                    //TODO
-                    
-                    
-                    //e.g. seed row 7, col 2
-                    for(var i=0; i<
-                    
-                    
-                    
+                }
+                
+                // we must now check all tiles above and below the seed tiles if they are blank
+                if(seed.up != nil && seed.up?.letter == nil) {
+                    let w = place_word(board, seed: seed.up!, word: word as String, distribution: rack_distribution, direction: "right");
+                    if (w != nil) {
+                        // score and check if its the highest
+                        w?.score = score(w!);
+                        if (w!.score > 0 && (highest == nil || w!.score > highest!.score)) {
+                            highest = w!;
+                        }
+                    }
+                    // reset
+                    board.reset_letters();
+                    iterations += 1;
+                }
+                if(seed.down != nil && seed.down?.letter == nil) {
+                    let w = place_word(board, seed: seed.down!, word: word as String, distribution: rack_distribution, direction: "right");
+                    if (w != nil) {
+                        // score and check if its the highest
+                        w?.score = score(w!);
+                        if (w!.score > 0 && (highest == nil || w!.score > highest!.score)) {
+                            highest = w!;
+                        }
+                    }
+                    // reset
+                    board.reset_letters();
+                    iterations += 1;
                 }
                 
                 
-                // looking for a word going down...
-                //TODO - can rule out a seed boxed in top and bottom!
+                // going down...
+                
+                // we can rule out a seed boxed in top and bottom as it will be covered already...
                 if(seed.up == nil || !seed.up!.yellow || seed.down == nil || !seed.down!.yellow) {
-                    for index in indexes {
-                        if(index > row) { continue; } // head of the word won't fit on board
-                        if(row + word.length - index > 14) { continue; } // tail of the word won't fit on the board
                     
-                        // fits on the board so place it...
-                        let w = place_word(board, row: row - index, col: col, word: word as String, distribution: rack_distribution, direction: "down");
+                    var start_row = row - word.length + 1;  // if row is 4 and word length is 3 chars then start_row should be 2
+                    if(start_row < 0) { start_row = 0; }
+                    
+                    var end_row = row;  // if row is 12 and word length is 6 chars then end_row should be 9
+                    if((row + word.length - 1) > 14) { end_row = 14 - word.length + 1 }
+                    
+                    for(var i=start_row; i<=end_row; i++) {
+                        
+                        let w = place_word(board, row: i, col: col, word: word as String, distribution: rack_distribution, direction: "right");
                         if (w != nil) {
                             // score and check if its the highest
                             w?.score = score(w!);
-                            if (highest == nil || w!.score > highest!.score) {
+                            if (w!.score > 0 && (highest == nil || w!.score > highest!.score)) {
                                 highest = w!;
                             }
                         }
                         // reset
                         board.reset_letters();
                         iterations += 1;
-                    
                     }
-                    // now deal with the seed derivitives...
-                    // we've already tried all vertical possibilities but we can try the tiles up
-                    // and down if they are blank to add a word in the horizontal direction
-                    //TODO
-                    
-                    
-                    
                 }
+                
+                // we must now check all tiles above and below the seed tiles if they are blank
+                if(seed.left != nil && seed.left?.letter == nil) {
+                    let w = place_word(board, seed: seed.left!, word: word as String, distribution: rack_distribution, direction: "down");
+                    if (w != nil) {
+                        // score and check if its the highest
+                        w?.score = score(w!);
+                        if (w!.score > 0 && (highest == nil || w!.score > highest!.score)) {
+                            highest = w!;
+                        }
+                    }
+                    // reset
+                    board.reset_letters();
+                    iterations += 1;
+                }
+                if(seed.right != nil && seed.right?.letter == nil) {
+                    let w = place_word(board, seed: seed.right!, word: word as String, distribution: rack_distribution, direction: "down");
+                    if (w != nil) {
+                        // score and check if its the highest
+                        w?.score = score(w!);
+                        if (w!.score > 0 && (highest == nil || w!.score > highest!.score)) {
+                            highest = w!;
+                        }
+                    }
+                    // reset
+                    board.reset_letters();
+                    iterations += 1;
+                }
+                
+                
+//                // get indexes of seed in word, iterate through those
+//                var indexes = get_indexes_of(word, letter: String(seed.letter!));
+//                
+//                
+//                // looking for a word going right (can rule out a seed boxed in left and right)...
+//                if(seed.left == nil || !seed.left!.yellow || seed.right == nil || !seed.right!.yellow) {
+//                    for index in indexes {
+//                        if(index > col) { continue; } // head of the word won't fit on board
+//                        if(col + word.length - index > 14) { continue; } // tail of the word won't fit on the board
+//                    
+//                        // fits on the board so place it...
+//                        let w = place_word(board, row: row, col: col - index, word: word as String, distribution: rack_distribution, direction: "right");
+//                        if (w != nil) {
+//                            // score and check if its the highest
+//                            w?.score = score(w!);
+//                            if (highest == nil || w!.score > highest!.score) {
+//                                highest = w!;
+//                            }
+//                        }
+//                        // reset
+//                        board.reset_letters();
+//                        iterations += 1;
+//                    
+//                    }
+//                    // now deal with the seed derivitives...
+//                    // we've already tried all horitonzal possibilities but we can try the tiles left
+//                    // and right if they are blank to add a word in the vertical direction
+//                    //TODO
+//                    
+//                    
+//                    //e.g. seed row 7, col 2
+//                   // for(var i=0; i<
+//                    
+//                    
+//                    
+//                }
+//                
+//                
+//                // looking for a word going down...
+//                //TODO - can rule out a seed boxed in top and bottom!
+//                if(seed.up == nil || !seed.up!.yellow || seed.down == nil || !seed.down!.yellow) {
+//                    for index in indexes {
+//                        if(index > row) { continue; } // head of the word won't fit on board
+//                        if(row + word.length - index > 14) { continue; } // tail of the word won't fit on the board
+//                    
+//                        // fits on the board so place it...
+//                        let w = place_word(board, row: row - index, col: col, word: word as String, distribution: rack_distribution, direction: "down");
+//                        if (w != nil) {
+//                            // score and check if its the highest
+//                            w?.score = score(w!);
+//                            if (highest == nil || w!.score > highest!.score) {
+//                                highest = w!;
+//                            }
+//                        }
+//                        // reset
+//                        board.reset_letters();
+//                        iterations += 1;
+//                    
+//                    }
+//                    // now deal with the seed derivitives...
+//                    // we've already tried all vertical possibilities but we can try the tiles up
+//                    // and down if they are blank to add a word in the horizontal direction
+//                    //TODO
+//                    
+//                    
+//                    
+//                }
             }
         }
         
@@ -318,11 +431,15 @@ class Scrabble {
     
     
     func place_word(board: Board, row: Int, col: Int, word: String, distribution: Distribution, direction: String) -> Word? {
-        
+        return place_word(board, seed: board.get_tile(row, col: col), word: word, distribution: distribution, direction: direction);
+    }
+    
+    func place_word(board: Board, seed: Tile?, word: String, distribution: Distribution, direction: String) -> Word? {
+        return nil;
    //     log_console("debug", message: "trying to place word " + word + " going " + direction + " from (" + String(row) + "," + String(col) + ")");
     
-        let w: Word = Word(word: word, row: row, col: col, direction: direction, tiles: Array<Tile>())
-        var tile: Tile? = board.get_tile(row, col: col);
+        var tile: Tile? = seed;
+        let w: Word = Word(word: word, row: tile!.row, col: tile!.col, direction: direction, tiles: Array<Tile>())
         distribution.reset()
         
         if (direction == "down") {
@@ -408,8 +525,8 @@ class Scrabble {
                 if(word.direction == "down") {
                     
                     let w: Word? = find_word(tile, direction: "right");
-                    if(w != nil) {
-                        if(dictionary.isValid(w!.word)) {
+                    if(w != nil && w?.word.characters.count > 1) {
+                        if(dictionary.isValid(w!.word)) { //XXX dont count single character words!
                             words.append(w!);
                         }
                         else {
@@ -420,7 +537,7 @@ class Scrabble {
                 else {
                     
                     let w: Word? = find_word(tile, direction: "down");
-                    if(w != nil) {
+                    if(w != nil && w?.word.characters.count > 1) {
                         if(dictionary.isValid(w!.word)) {
                             words.append(w!);
                         }
@@ -435,7 +552,7 @@ class Scrabble {
         // its only possible to make one word in the same direction as the passed word...
         
         let w: Word? = find_word(word.tiles[0], direction: word.direction);
-        if(w != nil) {
+        if(w != nil && w?.word.characters.count > 1) {
             if(dictionary.isValid(w!.word)) {
                 words.append(w!);
             }
@@ -579,7 +696,4 @@ class Scrabble {
         
         return indexes;
     }
-    
-    
-    
 }

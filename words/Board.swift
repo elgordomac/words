@@ -156,7 +156,7 @@ class Board {
     }
     
     func reset_letters() {
-        
+        return
         for row in board {
             for tile in row {
                 if (!tile.yellow) {

@@ -46,6 +46,14 @@ class Dictionary {
         return nswords
     }
     
+    func getNSWord(word: String) -> Array<NSString> {
+        
+        var result : Array<NSString> = Array<NSString>()
+        result.append(word)
+        
+        return result
+    }
+    
     func setWords(words : Set<String>) {
         self.words_set = words;
         self.words = words.sort();
